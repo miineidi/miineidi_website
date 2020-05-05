@@ -13,19 +13,6 @@ function initPreloader() {
   });
 }
 
-function initNavbar() {
-  $(window).scroll(function () {
-    // this will work when your window scrolled.
-    var height = $(window).scrollTop(); //getting the scrolling height of window
-
-    if (height > 50) {
-      $("#navbar-clone").addClass('is-active');
-    } else {
-      $("#navbar-clone").removeClass('is-active');
-    }
-  });
-}
-
 function initMobileMenu() {
   $('.navbar-burger').on("click", function () {
     var menu_id = $(this).attr('data-target');
@@ -65,15 +52,7 @@ function initSidebar() {
   }
 }
 
-function initModals() {
-  $('.modal-trigger').on('click', function () {
-    var modalID = $(this).attr('data-modal');
-    $('#' + modalID).addClass('is-active');
-  });
-  $('.modal-close, .close-modal').on('click', function () {
-    $(this).closest('.modal').removeClass('is-active');
-  });
-}
+
 
 function initBackToTop() {
   var pxShow = 600;
