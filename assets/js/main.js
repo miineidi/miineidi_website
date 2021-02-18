@@ -3,7 +3,6 @@
 initPreloader();
 $(document).ready(function () {
   feather.replace();
-  initNavbar();
   initMobileMenu();
   initSidebar();
   initModals();
